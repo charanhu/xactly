@@ -28,13 +28,19 @@ pip install -r requirements.txt
 ### 2. Environment Setup
 Create `.env` file:
 ```
-OPENAI_API_KEY=your_openai_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
 CHROMA_DB_PATH=./kb_index
 DATA_FOLDER=./data
 ```
 
 ### 3. Add PDF Knowledge Base
 Place your PDF files in the `data/` folder. PDFs will be automatically ingested when the app starts.
+
+or run the mock_data_generator.py script to create sample PDFs.
+
+```bash
+python mock_data_generator.py
+```
 
 ### 4. Run the Application
 ```bash
@@ -46,6 +52,13 @@ The API will be available at: http://localhost:8000
 ### 5. Interactive API Documentation
 - Swagger UI: http://localhost:8000/docs
 - ReDoc: http://localhost:8000/redoc
+
+
+### 5. Streamlit Interface (Optional)
+To run the Streamlit interface for testing the chat functionality:
+```bash
+streamlit run app.py
+```
 
 ## API Endpoints
 
