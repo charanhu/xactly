@@ -33,6 +33,11 @@ CHROMA_DB_PATH=./kb_index
 DATA_FOLDER=./data
 ```
 
+Create an API key from:
+https://console.groq.com/keys
+
+Replace the `your_groq_api_key_here` placeholder value in the `.env` file with your newly generated key.
+
 ### 3. Add PDF Knowledge Base
 Place your PDF files in the `data/` folder. PDFs will be automatically ingested when the app starts.
 
