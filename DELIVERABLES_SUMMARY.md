@@ -416,27 +416,6 @@ GET /health
 
 ---
 
-## Deployment Options
-
-### Local Development
-```bash
-python main.py
-```
-
-### Docker
-```bash
-docker build -t support-agent .
-docker run -p 8000:8000 -e OPENAI_API_KEY=sk-xxx support-agent
-```
-
-### Cloud Platforms
-- AWS: ECS/Fargate + RDS
-- GCP: Cloud Run + SQL
-- Azure: App Service + SQL DB
-- Heroku: Simple git push
-
----
-
 ## Documentation Breakdown
 
 | Document | Lines | Purpose |
